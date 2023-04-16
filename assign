@@ -1,0 +1,10 @@
+// HTTP Server: Build a simple HTTP server that listens to incoming requests and sends back responses using only the built-in http module in Node.js.
+const http = require('http');
+const server = http.createServer((req, res) => {
+  res.end('Administration staff!');
+});
+server.listen(3030, () => {
+  console.log('Server started on port 3030');
+});
+
+// // http//localhost:3030
